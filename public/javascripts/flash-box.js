@@ -9,7 +9,7 @@ jQuery.fn.flashBox = function( options ) {
     $(this).addClass(opts.flashNoticeClass);
   } else if((txt = flash.error) != 'undefined') {
     $(this).text(txt);
-    $(this).show();
+    $(this).show():
     $(this).addClass(opts.flashErrorClass);
   }
   $.cookies.del(opts.cookieName, {path: '/'})
@@ -18,7 +18,4 @@ jQuery.fn.flashBox = function( options ) {
 jQuery.fn.flashBox.defaults = { noticeClass : 'flash-notice',
                                 errorClass  : 'flash-error',
                                 cookieName  : 'flash' };
-$(document).ready(function() {
-	$('.flash-box').flashBox();
-});
-
+$('.flash-box').flashBox();
